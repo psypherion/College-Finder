@@ -20,19 +20,19 @@ while True:
     if physics <= fm:
         break
     else:
-        print("Acquired marks can't be igher tha Full Marks")
+        print("Acquired marks can't be higher tha Full Marks")
 while True:
     maths = float(input("Enter the acquired score in maths by the student : "))
     if maths <= fm:
         break
     else:
-        print("Acquired marks can't be igher tha Full Marks")
+        print("Acquired marks can't be higher tha Full Marks")
 while True:
     chem = float(input("Enter the acquired score in chemistry by the student : "))
     if chem <= fm:
        break
     else:
-      print("Acquired marks can't be igher tha Full Marks")
+      print("Acquired marks can't be higher tha Full Marks")
 
 # Sum
 sum = physics + maths + chem
@@ -42,7 +42,7 @@ sum = physics + maths + chem
 
 # defining the percentage function
 def percentage(x, num):
-    return x*100/fm
+    return x*100/num
 
 # Generating the percentage values
 physics_percent = percentage(physics, fm)
