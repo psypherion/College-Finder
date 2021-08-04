@@ -15,11 +15,27 @@ roll_no = input("Enter the roll number of student : ")
 fm = int(input("Enter the full marks of the exam : "))
 
 # Score in each subjects
+while True:
+    physics = float(input("Enter the acquired score in physics by the student : "))
+    if physics <= fm:
+        break
+    else:
+        print("Acquired marks can't be igher tha Full Marks")
+while True:
+    maths = float(input("Enter the acquired score in maths by the student : "))
+    if maths <= fm:
+        break
+    else:
+        print("Acquired marks can't be igher tha Full Marks")
+while True:
+    chem = float(input("Enter the acquired score in chemistry by the student : "))
+    if chem <= fm:
+       break
+    else:
+      print("Acquired marks can't be igher tha Full Marks")
 
-physics = int(input("Enter the acquired score in physics by the student : "))
-maths = int(input("Enter the acquired score in maths by the student : "))
-chem = int(input("Enter the acquired score in chemistry by the student : "))
-
+# Sum
+sum = physics + maths + chem
 
 
 # formula of percentage is : marks*100/Full marks
@@ -32,6 +48,7 @@ def percentage(x, num):
 physics_percent = percentage(physics, fm)
 math_percent = percentage(maths, fm)
 chem_percent = percentage(chem, fm)
+sum_percent = percentage(sum, fm*3)
 
 # Banner :
 print('''
@@ -57,9 +74,5 @@ print(f"Information : \n"
 print(f"Percentage : \n"
       f"Physics : {physics_percent} \n"
       f"Maths : {math_percent} \n"
-      f"Chemistry : {chem_percent}")
-
-
-
-
-
+      f"Chemistry : {chem_percent} \n"
+      f"Over all Percentage : {sum_percent}")
