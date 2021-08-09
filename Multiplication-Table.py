@@ -8,7 +8,7 @@ def mult(x, term = 10): # term by default is set to 10 i.e if the user does not 
         print(f"{x} X {i} = {x * i}")
         
 num = int(input("Enter the number : ")) # Taking the value of the number of which multiplication table will be generated
-term = input("Enter which number you want to create the table : ") # Number of terms wanted, Empty input value can also be provided
+term = input("Enter Upto which number you want to create the table : ") # Number of terms wanted, Empty input value can also be provided
 print('''
 
               _ _   _       _ _           _   _                  _____      _     _           
