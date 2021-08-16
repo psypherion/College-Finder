@@ -1,1 +1,1 @@
-![calc](https://user-images.githubusercontent.com/72155617/129445606-a531b12c-9aa1-403d-b5a1-66ebdfe343c2.gif)
+![GIF-210816_194001](https://user-images.githubusercontent.com/72155617/129577718-4425fc83-8d15-4850-b395-c9acf2ee7878.gif)
