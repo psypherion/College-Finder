@@ -3,7 +3,7 @@ import requests # To get data from the internet via APIs
 import smtplib # To send email through python
 from email.message import EmailMessage
 
-API_KEY = "adb128fc22d3c9cd2a59e6de845bc96b"
+API_KEY = "" # Use your API Key
 API_END_POINT = "https://api.openweathermap.org/data/2.5/onecall"
  
 # ------------- Weather Parameters -------------------- #
@@ -41,8 +41,8 @@ for hour_data in weather_slice:
 data = f" {will_rain}\n\n Today's Temperature : {curr_temp}°C \n\n Temperature Feels Like : {feels_like}°C \n\n Today's Wind Speed : {wind_speed} \n\n Over all Weather description : {desc}"
 
 # -------------------------------------------- Mail ------------------------------------------- #
-my_email = "williamskyle336@gmail.com"
-password = "sayaN@79sarkar"
+my_email = "" # Use your Email
+password = "" # Use your Email's password
 
 # ----------------- Creating the Connection ---------------- #
 connection = smtplib.SMTP_SSL("smtp.gmail.com", 465)
@@ -51,7 +51,7 @@ connection.login(my_email, password)
 msg = EmailMessage()
 msg['Subject'] = "!!!!!! Today's Weather Update !!!!!!"
 msg['From'] = my_email
-msg['To'] = "williamskyle562@gmail.com"
+msg['To'] = "" # Use the Mail on which the updates will be sent
 msg.set_content(data)
 
 connection.send_message(msg) # Sedning the Message
